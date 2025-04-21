@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Quran Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Al-Quran Web App</h1>
+    <nav>
+      <button onclick="showSection('quran')">Quran</button>
+      <button onclick="showSection('learn')">Learn</button>
+      <button onclick="toggleTheme()">Night Mode</button>
+    </nav>
+  </header>
+  <main>
+    <section id="quran" class="visible">
+      <input type="text" id="search" placeholder="Search Ayah, Surah, or keyword">
+      <div id="results">Search results will appear here.</div>
+    </section>
+    <section id="learn">
+      <h2>Learn Quran - Qaidah</h2>
+      <div class="qaidah">
+        <button onclick="playAudio('alif.mp3')">ا</button>
+        <button onclick="playAudio('baa.mp3')">ب</button>
+        <button onclick="playAudio('taa.mp3')">ت</button>
+        <!-- Add more letters as needed -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Made with love for learning and reflection.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
